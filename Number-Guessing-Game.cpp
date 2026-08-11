@@ -28,7 +28,7 @@ int main(){
     std::cout << "You chose the diffuculty level: " << difficulty << std::endl;
     std::cout << "Your number has been chosen please make your first guess" << std::endl;
     std::cin >> numGuess;
-    attempts --;
+    attempts --; // numbers start at 3 so i want 
     while (numGuess != randNum && attempts > 0){
         if(numGuess > randNum){
                 std::cout << "your number is higher than the random number, please make another guess" << std::endl;
