@@ -17,8 +17,8 @@ int main()
     std::cout << "what is the Unit you want the temperature to be convered to? (C, F, K)" << '\n';
     std::cin >> converted_unit;
     
-    if (starting_unit == "C" && (converted_unit) == "F") {
-        final_answer = (temp*9/5)+32;
+    if (starting_unit == "C" || "c" && (converted_unit) == "F" || "f") {
+        final_answer = (temp*9/5)+32.0;
         std::cout << "The temp converted from C to F is: " << final_answer << '\n';
     }
     else {
