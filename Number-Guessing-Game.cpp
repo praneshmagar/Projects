@@ -13,6 +13,8 @@ int main(){
     std::cout << "WELCOME TO THE NUMBER GUESSING GAME" <<std::endl;
     std::cout << "Please Choose a diffuculty level from (hard, medium, easy)" <<std::endl;
     std::cin >> difficulty;
+    std::cout << randNum <<std::endl; //to check if the random number is random
+    
     if (difficulty == "hard"){
         attempts = 3;
     }
@@ -28,7 +30,7 @@ int main(){
     std::cout << "You chose the diffuculty level: " << difficulty << std::endl;
     std::cout << "Your number has been chosen please make your first guess" << std::endl;
     std::cin >> numGuess;
-    attempts --; // numbers start at 3 so i want 
+    attempts --; // if attempts--; is inside the { } of the while loop, it runs every time the loop repeats.
     while (numGuess != randNum && attempts > 0){
         if(numGuess > randNum){
                 std::cout << "your number is higher than the random number, please make another guess" << std::endl;
