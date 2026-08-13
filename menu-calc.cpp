@@ -4,7 +4,7 @@ int firstnum;
 int secondnum;
 char op;
 int result;
-int add(int firstnum, int secondnum);
+int add(int firstnum, int secondnum);    // Function declaration: tells main() this function exists and will be defined later
 int subtract(int firstnum, int secondnum);
 int multiply(int firstnum, int secondnum);
 int divide(int firstnum, int secondnum);
@@ -19,11 +19,11 @@ int main(){
     
     if (op == '+')
         {
-            result = add(firstnum, secondnum);
+            result = add(firstnum, secondnum); // Call add() when the user chooses '+' ,,,,, Give the two numbers to add() and store its return value in result
         }
     else if (op == '-')
         {
-            result = subtract(firstnum, secondnum);
+            result = subtract(firstnum, secondnum); 
         }
     else if (op == '*')
         {
@@ -41,7 +41,7 @@ int main(){
 
 
 
-int add(int firstnum, int secondnum){
+int add(int firstnum, int secondnum){   // Receives two numbers and puts it in parameters (make sure to have correct type) and returns their sum
         return firstnum + secondnum;
 }
 int subtract(int firstnum, int secondnum){
